@@ -1,55 +1,100 @@
 .App {
-  width: 350px;
-  margin: 50px auto;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
 }
 
 .Header {
-  background-color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
   color: white;
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
 }
 
 .Calculator {
-  background-color: #222;
+  width: 320px;
+  background: pink;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .CalcDisplay {
-  background-color: white;
+  background: white;
   color: black;
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 15px;
-  font-size: 30px;
   margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 32px;
+  text-align: right;
+  padding: 15px;
   box-sizing: border-box;
 }
 
 .CalcButtons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 10px;
 }
 
 .CalcButton {
   height: 60px;
-  font-size: 22px;
+  font-size: 24px;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
-  background-color: lightseagreen;
-  color: darkkhaki;
+  background: darkgray;
+  color: red;
 }
 
 .CalcButton:hover {
-  background-color: lightgray;
+  background: #555;
+}
+
+.OperatorButton {
+  background: orange;
+  color: lightgreen;
+}
+
+.OperatorButton:hover {
+  background: darkgreen;
 }
 
 .ClearButton {
-  background-color: orange;
+  background: red;
   color: white;
+}
+
+.ClearButton:hover {
+  background: darkred;
+}
+
+.EqualsButton {
+  background: green;
+  color: lightgreen;
+}
+
+.EqualsButton:hover {
+  background: purple;
+}
+
+/* Container para mai-center ang button */
+.surname-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Style para sa button (malaking font at nasa gitna) */
+.surname-button {
+  font-size: 24px;          /* Nilakihan ang font */
+  font-weight: bold;        /* Makapal ang sulat */
+  padding: 10px 25px;       /* Lumaki rin ang button para kasya */
+  cursor: pointer;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: 80%;               /* Mas malapad para sa malaking text */
 }
